@@ -5,9 +5,10 @@ import PostList from "./PostList/PostList"
 const Posts = ({ match}) => {
     return ( 
     <div>
-        {match.isExact}
-        <PostList />
-        <Route path="/posts/:id" component={PostFull} />
+        {match.isExact ? <PostList /> 
+        : <Route path="/posts/:id" component={PostFull} /> }
+        
+       
     </div>
      );
 }
