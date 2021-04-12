@@ -8,7 +8,6 @@ const Posts = ({ match}) => {
         {match.isExact ? <PostList /> 
         : <Route path="/posts/:id" component={PostFull} /> }
         
-       
     </div>
      );
 }
