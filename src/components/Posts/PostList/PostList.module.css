@@ -1,0 +1,7 @@
+.PostList {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1250px;
+    list-style: none;
+    margin-top: 50px;
+}
