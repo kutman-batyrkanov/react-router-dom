@@ -5,6 +5,8 @@ import Contacts from "./components/Contacts/Contacts";
 import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import Posts from "./components/Posts/Posts";
+import "./App.css"
+import classes from "./li.module.css";
 
 function App() {
   const activeLinkStyle = {
@@ -13,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <ul>
+      <ul className={classes.li}>
         <li><NavLink activeStyle={activeLinkStyle} activeClassName="/activeLink" to="/">Home</NavLink></li>
         <li><NavLink activeStyle={activeLinkStyle} activeClassName="/activeLink"  to="/contacts">Contacts</NavLink></li>
         <li><NavLink activeStyle={activeLinkStyle} activeClassName="/activeLink"  to="/about">About</NavLink></li>
