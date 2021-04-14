@@ -30,8 +30,6 @@ function App() {
         <Route path="/" component={NotFound} />
         <Redirect to="/" />
       </Switch>
-
-      {/* <About /> */}
     </div>
   );
 }
